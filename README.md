@@ -28,6 +28,18 @@ Proxy your requests just by prefixing your request URL with: `https://non-cors.h
 GET https://joke-api-strict-cors.appspot.com/jokes/ten    ==>    GET https://non-cors.herokuapp.com/https://joke-api-strict-cors.appspot.com/jokes/ten
 
 ``` 
+```http request
+POST https://joke-api-strict-cors.appspot.com/jokes/addjoke    ==>    POST https://non-cors.herokuapp.com/https://joke-api-strict-cors.appspot.com/addjoke
+
+``` 
+```http request
+PUT https://joke-api-strict-cors.appspot.com/jokes/addjoke/{:id}    ==>    PUT https://non-cors.herokuapp.com/https://joke-api-strict-cors.appspot.com/jokes/addjoke/{:id}
+
+``` 
+```http request
+DELETE https://joke-api-strict-cors.appspot.com/jokes/{:id}    ==>    DELETE https://non-cors.herokuapp.com/https://joke-api-strict-cors.appspot.com/jokes/{:id}
+
+``` 
 ### Request for Contribution
 Changes and improvements are more than welcome! 
 
